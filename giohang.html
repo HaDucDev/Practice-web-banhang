@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bài thi cuối khóa</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CKEDITOR CDN -->
+  <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+  <style>
+    input[type="text"],
+    input[type="email"] {
+      border: none;
+      border-bottom: 1px solid red;
+    }
+  </style>
+  <!-- <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+ </script> -->
+</head>
+
+<body>
+  <!-- header   -->
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 col-md-2 col-xl-2">
+        <img src="images/PET.png" alt="" srcset="" class="img-fluid">
+      </div>
+     <div class="col-12 col-md-10 col-xl-9 text-center">
+        <h1 class="text-danger">Cửa Hàng Tạp Hóa</h1>
+        <p>
+          - Phục vụ quý khách 24/7 <br>
+          - <i class="fa fa-home" aria-hidden="true"></i> :TP Hồ Chí Minh <br>
+          - <i class="fa fa-envelope-o" aria-hidden="true"></i> : admin@cocal.com - <i class="fa fa-phone" aria-hidden="true"></i> :087776666
+        </p>
+      </div>
+
+      <div class="col-12 col-md-2 col-xl-1" style="width: 100%;">
+        <a href="giohang.html"><u style=" font-size: 35px; ">0</u> <i class="fa fa-shopping-cart" aria-hidden="true"
+            style="font-size:48px; margin-top: 10px;"></i></a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Menu   -->
+  <div class="container-fluid " style="padding: 0;"><span class="glyphicon glyphicon-list-alt"></span>
+    <div class="row">
+      <div class="col-12 col-md-12 col-xl-12">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="mobile.html"><i class="fa fa-bars" aria-hidden="true"></i> Discount Products
+                  <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="mobile.html"><i class="fa fa-mobile" aria-hidden="true"></i> Mobiles <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="tivi.html"><i class="fa fa-television" aria-hidden="true"></i> Tivis <span
+                    class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="mathang.html"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Foods <span
+                    class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Content   -->
+  <div class="container" style="margin-left: 1%; padding: 0;">
+    <div class="row">
+      <div class="col-12">
+        <a href="#" class="btn btn-outline-success">Đồng ý</a>
+        <a href="#" class="btn btn-outline-success">Xóa đơn hàng</a>
+        <a href="#" class="btn btn-outline-success">Mua tiếp</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="container-fluid">
+    <h2 class="bg-primary text-white p-2 " style="text-align: center;">Giỏ hàng của bạn</h2>
+    <div class="row text-warning">
+      <div class="col-12 col-md-6 col-xl-6 border">
+        <div class="table-responsive">
+          <table class="table table-hover table-striped">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th class="text-nowrap">Hình</th>
+                <th class="text-nowrap">Tên</th>
+                <th class="text-nowrap">Số lượng</th>
+                <th class="text-nowrap">Đơn giá bán</th>
+                <th class="text-nowrap">Thành tiền</th>
+                <th class="text-nowrap">Xóa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><img src="images/ANDROID_1.png" alt="" srcset="" style="width: 100%;"></td>
+                <td class="text-nowrap">Freetel ICE 2 8GB</td>
+                <td class="text-nowrap"><input type="text" value="1"></td>
+                <td>9.240.000</td>
+                <td>9.240.000</td>
+                <td><a href="#"><i class="fa fa-trash" aria-hidden="true" style="color: red;"></i></a></td>
+              </tr>
+              <tr>
+                <td scope="row"><img src="images/ANDROID_10.png" alt="" srcset="" style="width: 100%;"></td>
+                <td class="text-nowrap">Freetel ICE 2 8GB</td>
+                <td class="text-nowrap"><input type="text" value="1"></td>
+                <td>11.213.000</td>
+                <td>11.213.000</td>
+                <td><a href="#"><i class="fa fa-trash" aria-hidden="true" style="color: red;"></i></a></td>
+              </tr>
+              <tr>
+                <td scope="row"><img src="images/ANDROID_11.png" alt="" srcset="" style="width: 100%;"></td>
+                <td class="text-nowrap">Freetel ICE 2 8GB</td>
+                <td class="text-nowrap"><input type="text" value="1"></td>
+                <td>20.240.000</td>
+                <td>20.240.000</td>
+                <td><a href="#"><i class="fa fa-trash" aria-hidden="true" style="color: red;"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-6 col-xl-6">
+        <h2>THÔNG TIN GIAO HÀNG</h2>
+        <div class="form-group">
+          <label for="">Họ tên</label>
+          <input type="text" name="" class="form-control" id="" placeholder="Nhập họ tên">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" name="" class="form-control" id="" placeholder="Nhập Email">
+        </div>
+        <div class="form-group">
+          <label for="">Điện thoại</label>
+          <input type="text" name="" class="form-control" id="" placeholder="Nhập điện thoại">
+        </div>
+        <div class="form-group">
+          <label for="">Địa chỉ giao hàng</label>
+          <input type="text" name="" class="form-control" id="" placeholder="Nhập địa chỉ giao hàng">
+        </div>
+        <div class="form-group">
+          <label for="">Ngày giao hàng</label>
+          <input type="date" name="" id="">
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+  </div>
+  <!-- Footer   -->
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 col-md-12 col-xl-12 bg-dark text-white-50 text-center p-3">
+        &copy; 2022 Designer Lập trình viên javascript
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
